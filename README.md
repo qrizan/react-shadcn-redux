@@ -3,7 +3,7 @@
 #### built with
 
 | Tools  |  |
-| ------------- | ------------- |
+| :--- | :--- |
 | React  | https://react.dev  |
 | Redux | https://redux.js.org  |
 | Shadcn UI | https://ui.shadcn.com |
@@ -17,7 +17,7 @@ https://github.com/qrizan/nestjs-swagger-prisma
 ```
 copy .env.example .env
 ```
-
+example
 ```
 VITE_API_URL=http://localhost:3000
 ```
@@ -56,7 +56,7 @@ pnpm dev
 
 ![user-list](screenshots/user-list.png)
 
-#### state preview ( redux devTtools )
+#### state preview ( redux dev tools )
 
 ![redux-tool](screenshots/redux-tool.png)
   
