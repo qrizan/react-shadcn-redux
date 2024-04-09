@@ -1,4 +1,4 @@
-## Game Catalog
+## Games Catalog
 
 #### built with
 

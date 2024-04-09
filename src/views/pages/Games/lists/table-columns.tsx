@@ -9,7 +9,7 @@ export const columns: ColumnDef<IGames>[] = [
     header: () => <div className="text-left ml-2">Title</div>,
     cell: ({ row }) => {
       return (
-        <div className="w-[450px] truncate font-medium ml-2">
+        <div className="w-[350px] truncate font-medium ml-2">
             {row.getValue("title")}
         </div>
       )
