@@ -1,6 +1,7 @@
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
-import { logoutRequest } from '@/store/actions/authAction'; 
+import { logoutRequest } from '@/store/actions/authAction';
+import { apiUrl } from '@/config';
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -36,7 +37,7 @@ export function UserHeader() {
 
       navigate("/");
     }
-    const baseUrl = import.meta.env.VITE_API_URL
+    const baseUrl = apiUrl
 
     const userLogin = {
       image: `${baseUrl}${user?.avatar}`,

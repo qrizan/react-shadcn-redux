@@ -2,15 +2,16 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import dayjs from "dayjs";
 
 import { ILatestUser } from "@/dtos/dashboard.dto";
+import { apiUrl } from "@/config";
 
 interface IRecentUsersProps {
   latestUser: ILatestUser[],
 }
 
-export const RecentUsers: React.FC<IRecentUsersProps> = (props) => {  
+export const RecentUsers: React.FC<IRecentUsersProps> = (props) => {
   const { latestUser } = props
 
-  const baseUrl = import.meta.env.VITE_API_URL
+  const baseUrl = apiUrl
 
   return (
     <div className="space-y-8">

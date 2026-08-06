@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 import { IUsers } from "@/dtos/users.dto"
 import { Separator } from "@/components/ui/separator"
+import { apiUrl } from "@/config"
 
 export interface IUserViewDetailProps {
   open: boolean,
@@ -13,7 +14,7 @@ export interface IUserViewDetailProps {
 }
 export function UserViewDetail(props: IUserViewDetailProps) {
   const { open, setClose, userDetail } = props
-  const baseUrl = import.meta.env.VITE_API_URL
+  const baseUrl = apiUrl
 
   return (
     <Dialog open={open} onOpenChange={setClose}>

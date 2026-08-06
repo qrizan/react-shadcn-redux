@@ -1,0 +1,7 @@
+node_modules
+dist
+.env
+.git
+CLAUDE.md
+PLAN.md
+REPRODUCE.md
