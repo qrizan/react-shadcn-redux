@@ -1,3 +1,10 @@
+# Dokumen kerja internal — tidak ikut ke repo publik.
+# Sengaja di-ignore sebelum pernah di-commit: sekali masuk riwayat git, ia tidak
+# bisa ditarik kembali setelah repo dipublikasikan.
+/CLAUDE.md
+/PLAN.md
+/REPRODUCE.md
+
 # Logs
 logs
 *.log
