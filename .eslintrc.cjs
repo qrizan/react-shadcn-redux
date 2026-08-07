@@ -15,4 +15,11 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      // Config file Node.js (CommonJS `require`) di root, bukan kode aplikasi browser.
+      files: ['tailwind.config.js', 'postcss.config.js'],
+      env: { node: true },
+    },
+  ],
 }
