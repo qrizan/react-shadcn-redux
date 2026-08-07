@@ -20,6 +20,12 @@ RUN pnpm build
 
 FROM nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0 AS runtime
 
+# Base image belum dibangun ulang sejak advisory Alpine terbaru; tarik
+# paket OS yang sudah dipatch di dalam branch Alpine yang sama.
+USER root
+RUN apk update && apk upgrade --no-cache
+USER 101
+
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --chown=101:101 docker/40-write-app-config.sh /docker-entrypoint.d/40-write-app-config.sh
 RUN chmod +x /docker-entrypoint.d/40-write-app-config.sh
